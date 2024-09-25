@@ -9,4 +9,17 @@ function lowest(numbers) {
   return lowestNumber;
 }
 const heights = [67, 90, 20, 65, 37, 2, -10];
-console.log(lowest(heights));
+// console.log(lowest(heights));
+
+// Task 2
+function findSmall(names) {
+  let smallName = names[0];
+  for (let nam of names) {
+    if (nam.length < smallName.length) {
+      smallName = nam;
+    }
+  }
+  return smallName;
+}
+const friends = ["rahim", "robin", "rafi", "ron", "rashed", "i"];
+console.log(findSmall(friends));
