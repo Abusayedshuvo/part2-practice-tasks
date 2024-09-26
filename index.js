@@ -21,5 +21,20 @@ function findSmall(names) {
   }
   return smallName;
 }
-const friends = ["rahim", "robin", "rafi", "ron", "rashed", "i"];
-console.log(findSmall(friends));
+const friends = ["shuvo", "robin", "rafi", "ron", "rashed"];
+// console.log(findSmall(friends));
+
+// Task 3
+function calculateBudget(laptopQuantity, tableQuantity, mobileQuantity) {
+  const laptopPrice = 55000;
+  const tabletPrice = 75000;
+  const mobilePrice = 20000;
+
+  const laptopCost = laptopPrice * laptopQuantity;
+  const tableCost = tabletPrice * tableQuantity;
+  const mobileCost = mobilePrice * mobileQuantity;
+
+  const total = laptopCost + tableCost + mobileCost;
+  return total;
+}
+console.log(calculateBudget(1, 2, 3));

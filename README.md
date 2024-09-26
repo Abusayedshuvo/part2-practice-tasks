@@ -31,3 +31,22 @@ const friends = ["rahim", "robin", "rafi", "ron", "rashed", "i"];
 console.log(findSmall(friends));
 
 ```
+
+## 3. Simple calculate in javaScript Function
+
+```
+function calculateBudget(laptopQuantity, tableQuantity, mobileQuantity) {
+  const laptopPrice = 55000;
+  const tabletPrice = 75000;
+  const mobilePrice = 20000;
+
+  const laptopCost = laptopPrice * laptopQuantity;
+  const tableCost = tabletPrice * tableQuantity;
+  const mobileCost = mobilePrice * mobileQuantity;
+
+  const total = laptopCost + tableCost + mobileCost;
+  return total;
+}
+console.log(calculateBudget(1, 2, 3));
+
+```
