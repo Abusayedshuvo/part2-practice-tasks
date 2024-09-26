@@ -37,4 +37,23 @@ function calculateBudget(laptopQuantity, tableQuantity, mobileQuantity) {
   const total = laptopCost + tableCost + mobileCost;
   return total;
 }
-console.log(calculateBudget(1, 2, 3));
+// console.log(calculateBudget(1, 2, 3));
+
+// Task 4
+function findAveragePrice(phones) {
+  let sum = 0;
+  for (let phone of phones) {
+    sum = sum + phone.price;
+  }
+  const average = sum / phones.length;
+  return Math.round(average);
+}
+const phones = [
+  { model: "Phone1", brand: "iphone", price: 95000 },
+  { model: "Phone2", brand: "samsung", price: 40000 },
+  { model: "Phone3", brand: "oppo", price: 26000 },
+  { model: "Phone4", brand: "nokia", price: 35000 },
+  { model: "Phone5", brand: "iphone", price: 105000 },
+  { model: "Phone6", brand: "HTC", price: 48000 },
+];
+console.log(findAveragePrice(phones));
